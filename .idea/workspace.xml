@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dab37db-a06a-4cde-8a28-fb5d4f069024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pic/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/migrations/0002_remove_image_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,5 +77,16 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580590343902" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pic/admin.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

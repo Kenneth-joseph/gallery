@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dab37db-a06a-4cde-8a28-fb5d4f069024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gallery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gallery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,5 +77,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="449" y="167" width="1022" height="737" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1580472075998" />
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1580561712082">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580561712082" />
   </component>
 </project>

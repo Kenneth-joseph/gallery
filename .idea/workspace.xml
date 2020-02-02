@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dab37db-a06a-4cde-8a28-fb5d4f069024" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pic/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,17 +75,17 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="449" y="167" width="1022" height="737" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1580472075998" />
-    <state x="131" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1580590343902">
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1580624479116">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580590343902" />
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580624479116" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pic/admin.py</url>
-          <line>2</line>
+          <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

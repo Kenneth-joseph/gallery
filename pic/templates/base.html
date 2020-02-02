@@ -1,4 +1,5 @@
 {% load bootstrap3 %}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +12,54 @@
 
     {%block styles%}
     {% bootstrap_css%}
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
     {%endblock%}
 </head>
 <body>
-<h1 class="text-center">we good</h1>
+  {%include "navbar.html"%}
+<!-- Main navigation -->
+<header>
+
+  <!-- Full Page Intro -->
+  <div class="view grey lighten-3">
+    <!-- Mask & flexbox options-->
+    <div class="mask">
+      <!-- Content -->
+      <div class="container h-100">
+        <!--Grid row-->
+        <div class="row align-items-center h-100">
+          <!--Grid column-->
+          <div class="col-md-6">
+            <h1 class="mb-4">Share your <span class="text-warning">photos</span><br><span class="cyan-text">with the</span> World.</h1>
+            <p class="mb-4 pb-2 dark-grey-text info">In this page you can share the most envied picture you've ever taken and give it out to the rest .</p>
+          </div>
+          <!--Grid column-->
+       
+          <!--Grid column-->
+          <div class="col-md-6">
+            <img src="https://mdbootstrap.com/img/illustrations/hiker-man-colour.svg" alt="" class="img-fluid">
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+  
+</header>
+<!-- Main navigation -->
 {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 {% bootstrap_javascript %}

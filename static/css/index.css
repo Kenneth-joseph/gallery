@@ -1,0 +1,14 @@
+h1{
+    color: red;
+}
+
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+.info{
+    font-size:medium;
+}

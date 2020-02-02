@@ -45,5 +45,10 @@ class Image(models.Model):
     def get_image(self):
         pass
 
+    @classmethod
+    def get_image(cls, image_id):
+        image = Image.objects.filter(id=image_id)
+        
+
     def __str__(self):
         return self.name

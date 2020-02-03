@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9dab37db-a06a-4cde-8a28-fb5d4f069024" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/pic/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pic/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pic/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pic/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

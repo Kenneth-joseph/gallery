@@ -14,7 +14,7 @@ def search_results(request):
         searched_image = Image.search_image(search_term)
         message = f"{search_term}"
 
-        return render(request, 'search.html', {"message": message, "image": searched_image})
+        return render(request, 'search.html', {"message": message, "images": searched_image})
     else:
         message: "Search your location photos"
         return render(request, 'search.html', {"message": message})

@@ -60,6 +60,52 @@
   
 </header>
 <!-- Main navigation -->
+
+
+  <div class="container-fluid">
+    {% if image %}
+      {% for images in image%}
+      <div class="row col-md-6 col-sm-6">
+        <div class="card card-cascade mr-4 mt-3">
+
+          <!-- Card image -->
+          <div class="view view-cascade overlay">
+            <img class="card-img-top embed-responsive-item" src="{{images.pic.url}}" alt="Card image cap">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        <div class="card-body card-body-cascade text-center">
+
+          <!-- Title -->
+          <h4 class="card-title"><strong>{{images.name}}</strong></h4>
+          <!-- Subtitle -->
+          <h6 class="font-weight-bold indigo-text py-2">{{images.category}}</h6>
+          <!-- Text -->
+          <p class="card-text des">
+            {{images.description}}
+          </p>
+        </div>
+      
+        <!-- Card footer -->
+        <div class="card-footer text-muted text-center">
+          {{images.location}}
+        </div>
+      
+      </div>
+   
+  </div>
+  {%empty%}
+  <div class="row">
+    <h2 class="text-center">
+      There No Images
+    </h2>
+  </div>
+  {%endfor%}
+  {%endif%}
+  </div>
+   
+
 {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 {% bootstrap_javascript %}

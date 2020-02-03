@@ -25,6 +25,9 @@ class Category(models.Model):
     def is_upperclass(self):
         return self.share_gallery in {self.FASHION, self.ART}
 
+    def __str__(self):
+        return self.category
+
 
 class Image(models.Model):
     name = models.CharField(max_length=30)
@@ -48,9 +51,14 @@ class Image(models.Model):
 
     @classmethod
     def get_image(cls, image_id):
-        image = Image.objects.filter(id=image_id)
-        print(image)
-        return image
+        imageg = Image.objects.filter(id=image_id)
+        return imageg
+
+    @classmethod
+    def image(cls):
+        image_views = cls.objects.order_by('location')
+        return image_views
+        print(image_views)
 
     @classmethod
     def search_image(cls, search_term):

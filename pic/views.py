@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.shortcuts import render
 from .models import Image, Location, Category
 
 
 def home(request):
-    return render(request, 'home.html')
+    image = Image.image()
+    return render(request, 'base.html', {"image": image})
 
 
 def search_results(request):
@@ -16,6 +17,12 @@ def search_results(request):
 
         return render(request, 'search.html', {"message": message, "images": searched_image})
     else:
-        message: "Search your location photos"
+        message="Search your location photos"
         return render(request, 'search.html', {"message": message})
-# Create your views here.
+
+# def image(request, image_id):
+#     try:
+#         image = Image.objects.get(id=image_id)
+#     except DoesNotExist:
+#         raise Http404()
+#     return render(request, "home.html", {"image": image})

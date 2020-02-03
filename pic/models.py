@@ -10,10 +10,10 @@ class Location(models.Model):
 
 
 class Category(models.Model):
-    FASHION = 'FS'
-    MUSIC = 'MS'
-    ART = 'AT'
-    NATURE = 'NT'
+    FASHION = 'Fashion'
+    MUSIC = 'Music'
+    ART = 'Art'
+    NATURE = 'Nature'
     SHARE_GALLERY = [
         (FASHION, 'Fashion'),
         (MUSIC, 'Music'),

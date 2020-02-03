@@ -28,10 +28,11 @@ class Category(models.Model):
 
 class Image(models.Model):
     name = models.CharField(max_length=30)
-    description = models.CharField(max_length=30)
+    description = models.TextField(max_length=250)
     location = models.ForeignKey(Location)
     category = models.ForeignKey(Category)
     pub_date = models.DateTimeField(auto_now_add=True)
+    pic = models.ImageField(upload_to='pictures/', default='kent')
 
     def save_image(self):
         self.save()
@@ -48,6 +49,7 @@ class Image(models.Model):
     @classmethod
     def get_image(cls, image_id):
         image = Image.objects.filter(id=image_id)
+        print(image)
         return image
 
     @classmethod

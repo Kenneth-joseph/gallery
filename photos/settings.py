@@ -1,7 +1,7 @@
 import os
 import django_heroku
 import dj_database_url
-import decouple import config,Csv
+from decouple import config,Csv
 """
 Django settings for photos project.
 
@@ -91,15 +91,14 @@ if config('MODE')=="dev":
     }
 }
 else:
-    DATABASE={
+    DATABASES={
         'default':dj_database_url.config(
             default=config('DATABASE_URL')
         )
     }
 
 db_from_env=dj_database_url.config(conn_max_age=500)
-DATABASE['default'].update(db_from_env)
-
+DATABASES['default'].update(db_from_env)
 ALLOWED_HOSTS=config('ALLOWED_HOSTS', cast=Csv())
 
 # Password validation

@@ -15,11 +15,15 @@ header,
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 30vw;
   object-fit: cover;
 }
 
 .des{
   font-size: large;
 
+}
+
+.mb{
+font-size:15px;
 }

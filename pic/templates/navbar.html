@@ -7,6 +7,9 @@
 </head>
 <body>
     <nav class="navbar navbar-dark default-color">
+        <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+    </div>
         <form class="navbar-form form-inline my-2 my-lg-0 ml-auto" role="search" action="{% url 'search_results' %}">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search Image" name="image">

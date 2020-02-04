@@ -1,3 +1,7 @@
+import os
+import django_heroku
+import dj_database_url
+import decouple import config,Csv
 """
 Django settings for photos project.
 
@@ -19,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2n0lg#7shsz(^!()((-^l8xg!_go_q*z0e!utz#x(v=kmg(su$'
-
+SECRET_KEY = config('SECRET_KEY')
+MODE=config("MODE", default="dev")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -40,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -72,18 +77,30 @@ WSGI_APPLICATION = 'photos.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+if config('MODE')=="dev":
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
-        'PASSWORD': 'kent1234',
-        'USER': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '',
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': config('DB_NAME'),
+            'PASSWORD':config('DB_PASSWORD'),
+            'USER': config('DB_USER'),
+            'HOST': config('DB_HOST'),
+            'PORT': '',
 
     }
 }
+else:
+    DATABASE={
+        'default':dj_database_url.config(
+            default=config('DATABASE_URL')
+        )
+    }
+
+db_from_env=dj_database_url.config(conn_max_age=500)
+DATABASE['default'].update(db_from_env)
+
+ALLOWED_HOSTS=config('ALLOWED_HOSTS', cast=Csv())
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -123,6 +140,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+django_heroku.settings(locals())

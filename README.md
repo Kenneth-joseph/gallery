@@ -9,7 +9,7 @@
  >>##### Landing page
 ![this shows the top page](static/images/one.png)
  >>##### Search 
-![this shows the top page](static/image/two.png)
+![this shows the top page](static/images/two.png)
 
  ## Description
 >This page is a great platform for sharing photos

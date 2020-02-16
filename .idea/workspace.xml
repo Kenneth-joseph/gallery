@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dab37db-a06a-4cde-8a28-fb5d4f069024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pictures/desk009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YOUR_FILE.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file_name.pgdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kent-gallery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kent-gallery.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mydb.dump" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/pic/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/pic/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pic/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/pic/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,10 +78,10 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="449" y="167" width="1022" height="737" key="SettingsEditor/0.27.1920.1010@0.27.1920.1010" timestamp="1580472075998" />
-    <state x="131" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1580795339036">
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog" timestamp="1580883109300">
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
-    <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580795339036" />
+    <state x="131" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1580883109300" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

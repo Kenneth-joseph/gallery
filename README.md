@@ -25,7 +25,10 @@
  - HTML
  - CSS
  - Bootstrap 4
- - Flask
+ - Djnago
+ - Postgresql Database
+ - Mdbootrap
+ - Javascript and JQuery
  ## Contact me
  > To contact me please call this number : 0708037786
 
